@@ -290,7 +290,6 @@ function foorm_i18n_util($fieldinfo) {
     }
     return $strings;
 }
-
 if ( ! function_exists('isCli') ) {
     function isCli() {
         $sapi_type = php_sapi_name();
@@ -328,6 +327,7 @@ if ( isCli() ) {
 
     $i18strings = foorm_i18n_util($test_frm);
     print_r($i18strings);
+    
 
 }
 
